@@ -25,7 +25,7 @@ class FormgradeExtension(NbgraderFormgradeExtension):
     def build_extra_config(self):
         extra_config = super(NbgraderFormgradeExtension, self).build_extra_config()
         extra_config.E2xExporter.template_file = "formgrade"
-        extra_config.E2xExporter.template_path = [
+        extra_config.E2xExporter.template_paths = [
             handlers.template_path,
             nbgrader_handlers.template_path,
         ]

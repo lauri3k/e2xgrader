@@ -38,7 +38,7 @@ class E2xExporter(HTMLExporter):
                     )
                 )
             ]
-            + [nbgrader_handlers.template_paths]
+            + [nbgrader_handlers.template_path]
         )
 
     @contextfilter
